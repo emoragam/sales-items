@@ -19,6 +19,7 @@ public class ProductController {
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
     public List<Product> getAllProducts() {
+        //Test of branch
         return repository.findAll();
     }
 
