@@ -6,6 +6,9 @@ import lombok.Setter;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.Date;
+import java.util.List;
+
 @Document(value = "bill_header")
 @Setter
 @Getter
@@ -13,7 +16,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class BillHeader {
     @Id
     private String id;
-    private String date;
+    private Date date;
     private String codeBill;
     private User user;
+    private List<BillDetail> details;
 }

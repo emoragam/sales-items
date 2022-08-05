@@ -14,6 +14,5 @@ public class BillDetail {
     @Id
     private String id;
     private Integer quantity;
-    private BillHeader billHeader;
     private Product product;
 }
